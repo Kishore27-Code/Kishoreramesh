@@ -1,0 +1,890 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio - Kishore Ramesh</title>
+
+    <!-- bootstrap css cdn link  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+
+    <!-- custom css file -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- google font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- bootstrap icon cdn link  -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css"
+    />
+
+    <!-- for adding animation to website we have use AOS library 
+    AOS Library css file cdn link -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- jquery cdn link  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  </head>
+  <body>
+    <!-- navbar starts -->
+    <nav
+      id="navbar-top"
+      class="navbar navbar-expand-lg navbar-light bg-white sticky-top"
+    >
+      <div class="container-fluid px-5">
+        <a class="navbar-brand fw-bold fs-2" href="#" style="color: #3f396d"
+          >Portfolio</a
+        >
+        <button
+          class="nav-menu d-md-none"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <i class="bi bi-menu-button-fill"></i>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-center"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav gap-4" style="font-size: 1.1rem">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#service">Service</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">My Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#portfolio">Certifications</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#testimonial">Awards</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#blog">Experience</a>
+            </li>
+          </ul>
+        </div>
+        <button onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'});" class="c-btn ms-4 py-2 px-4 rounded-pill d-none d-md-block">Contact</button>
+      </div>
+    </nav>
+    <!-- navbar ends here -->
+
+    <!-- home section starts  -->
+    <section class="home pt-5 pb-5" id="home">
+      <div class="row justify-content-evenly align-middle">
+        <!-- here data-aos is used for adding aos animation  -->
+        <div class="col-10 col-md-6 text-center text-md-start" data-aos="slide-right">
+          <h2 style="color: #3f396d">
+            Hello! I Am <br /><span class="c-orange">Kishore Ramesh</span>
+          </h2>
+          <p class="text-muted">
+            I’m a Lead RPA Developer with 6+ years of experience in automation platforms using Automation Anywhere A360, UiPath, and Python.
+          </p>
+          <button onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'});" class="c-btn h-btn mt-3 py-3 px-5 rounded-pill">
+            Hire Me
+          </button>
+          <a href="" class="link ms-4 d-none">See My Work</a>
+        </div>
+        <div class="col-10 col-md-4 d-none d-md-block">
+          <img src="images/banner-01.png
+		  " class="img-fluid" alt="" />
+        </div>
+      </div>
+    </section>
+    <!-- home section ends here -->
+
+    <!-- expertise section starts -->
+    <section class="expertise mt-5" id="service">
+      <div class="heading text-center">
+        <small>My Expertise</small>
+        <h3>
+          Provide Wide Range of <br />
+          Automation & AI Services
+        </h3>
+      </div>
+      <div class="row justify-content-evenly mt-5">
+        <div class="col-10 col-md-4" data-aos="fade-up">
+          <div class="service-card">
+            <div class="img">
+              <img
+                src="images/service-icon1.png"
+                class="w-25 img-fluid img"
+                alt=""
+              />
+            </div>
+            <div class="content mt-3">
+              <h4>Process Automation</h4>
+              <p class="text-muted">
+                Design and deploy end-to-end automation workflows using Automation Anywhere A360 and UiPath to eliminate manual tasks and boost productivity.
+              </p>
+              <!--<a href="" class="link">Read More</a>-->
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-10" data-aos="fade-up">
+          <div class="service-card">
+            <div class="img">
+              <img
+                src="images/service-icon2.png"
+                class="w-25 img-fluid img"
+                alt=""
+              />
+            </div>
+            <div class="content mt-3">
+              <h4>API & System Integration</h4>
+              <p class="text-muted">
+                Integrate SAP, ServiceNow, and other enterprise systems using REST APIs and Python scripts for seamless data exchange and real-time process execution.
+              </p>
+              <!--<a href="" class="link">Read More</a>-->
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-10" data-aos="fade-up">
+          <div class="service-card">
+            <div class="img">
+              <img
+                src="images/service-icon3.png"
+                class="w-25 img-fluid img"
+                alt=""
+              />
+            </div>
+            <div class="content mt-3">
+              <h4>Intelligent Document Processing</h4>
+              <p class="text-muted">
+                Automate document handling with AI-powered extraction, IQ Bot, and OCR solutions to process invoices, forms, and reports efficiently.
+              </p>
+              <!--<a href="" class="link">Read More</a>-->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- expertise section ends here -->
+
+    <!-- skill section starts -->
+    <section class="skill mt-5 py-5" id="about">
+      <div class="row justify-content-evenly">
+        <div class="col-10 col-md-5 skill-with-progress" data-aos="slide-right">
+          <div class="row justify-content-evenly">
+            <div class="col-10 col-md-6">
+              <div class="progress-card ms-3 ms-md-0">
+                <div class="circular-progress html-css">
+                  <span class="progress-value html-progress">0%</span>
+                </div>
+                <br />
+                <span class="text">Automation Anywhere A360</span>
+              </div>
+            </div>
+            <div class="col-10 col-md-6 mt-4 mt-md-0">
+              <div class="progress-card ms-3 ms-md-0">
+                <div class="circular-progress javascript">
+                  <span class="progress-value javascript-progress">0%</span>
+                </div>
+                <br />
+                <span class="text">UiPath</span>
+              </div>
+            </div>
+          </div>
+          <div class="row justify-content-evenly mt-4">
+            <div class="col-10 col-md-6">
+              <div class="progress-card ms-3 ms-md-0">
+                <div class="circular-progress php">
+                  <span class="progress-value php-progress">0%</span>
+                </div>
+                <br />
+                <span class="text">Python Scripting</span>
+              </div>
+            </div>
+            <div class="col-10 col-md-6 mt-4 mt-md-0">
+              <div class="progress-card ms-3  ms-md-0">
+                <div class="circular-progress reactjs">
+                  <span class="progress-value reactjs-progress">0%</span>
+                </div>
+                <br>
+                <span class="text">API Integration</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-10 col-md-5 skill-detail" data-aos="slide-left">
+          <div class="heading mt-5 mt-md-3">
+            <small>My Skills</small>
+            <h3>Efficient & Intelligent Automation Solutions</h3>
+            <p class="text-muted">
+              I design and implement smart automation workflows that streamline business processes, reduce manual effort, and enhance productivity.
+            </p>
+            <p class="text-muted">
+              My expertise spans RPA platforms, API integrations, and AI-powered document processing to deliver scalable and reliable digital solutions.
+            </p>
+            <button class="c-btn h-btn mt-3 py-3 px-5 rounded-pill">
+              <!-- here download attribute is used for adding download functionality to button  -->
+              <a
+                href="Kishore Kumar Ramesh Resume.pdf"
+                download="SampleCV"
+                style="text-decoration: none;color: #fff;"
+                >Download CV</a
+              >
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- skill section end here -->
+
+    <!-- portfolio section starts here -->
+    <section class="portfolio" id="portfolio">
+      <div class="heading text-center pt-5">
+        <small>Certifications</small>
+        <h3>Industry Recognized Certifications</h3>
+      </div>
+
+      <div id="myBtnContainer" class="text-center mt-4">
+        <!-- here we will create custom attribute using data- for filtering -->
+        <button class="filter-item" data-filter="all">All</button>
+        <button class="filter-item" data-filter="game">A360</button>
+        <button class="filter-item" data-filter="webapp">UiPath</button>
+        <button class="filter-item" data-filter="website">Azure</button>
+        <button class="filter-item" data-filter="brand">Python</button>
+      </div>
+      <div class="portfolio-body">
+        <div class="row justify-content-evenly px-4">
+          <div class="post col-md-4 website all col-10 mt-3 mt-md-0" data-aos="fade-up">
+            <div class="card">
+              <img src="images/Azure - AI 900.png" class="card-img-top" alt="..." />
+              <div class="card-body text-center">
+                <h4 class="card-title">Azure AI Fundamentals</h4>
+                <span class="badge bg-secondary badge-pill">#AzureAIFundamentals</span>
+                <span class="badge bg-secondary badge-pill">#MicrosoftAzureAI</span>
+                <span class="badge bg-secondary badge-pill mb-2">#AICertification</span
+                ><br />
+                <a href="https://learn.microsoft.com/api/credentials/share/en-gb/KishoreKumarR-7873/318EBD3C1FBD7B6F?sharingId=1B93A4DFBD7B6C11" class="link">Show Credential</a>
+              </div>
+            </div>
+          </div>
+          <div class="post col-md-4 game all col-10 mt-3 mt-md-0" data-aos="fade-up">
+            <div class="card">
+              <img
+                src="images/AA Advance.png"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body text-center">
+                <h4 class="card-title">Advanced Automation Professional</h4>
+                <span class="badge bg-secondary badge-pill">#Automation</span>
+                <span class="badge bg-secondary badge-pill">#RPA</span>
+                <span class="badge bg-secondary badge-pill mb-2">#A360</span
+                ><br />
+                <a href="https://certificates.automationanywhere.com/0fe6f7c3-c69e-41b7-b619-32cdf097eae6" class="read-more-btn link">Show Credential</a>
+              </div>
+            </div>
+          </div>
+          <div class="post col-md-4 webapp all col-10 mt-3 mt-md-0" data-aos="fade-up">
+            <div class="card">
+              <img src="images/BA - UiPath.png" class="card-img-top" alt="..." />
+              <div class="card-body text-center">
+                <h4 class="card-title">Automation Business Analyst</h4>
+                <span class="badge bg-secondary badge-pill">#UiPath</span>
+                <span class="badge bg-secondary badge-pill">#BusinessAnalyst</span>
+                <span class="badge bg-secondary badge-pill mb-2">#Automation</span
+                ><br />
+                <a href="https://credentials.uipath.com/6e40a55f-8ac7-4bbe-897e-6c3c7c68fe98" class="read-more-btn link">Show Credential</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-evenly mt-4 px-4">
+          <div class="post col-md-4 game all col-10 mt-3 mt-md-0" data-aos="fade-up">
+            <div class="card">
+              <img src="images/APA Developer Leader.png" class="card-img-top" alt="..." />
+              <div class="card-body text-center">
+                <h4 class="card-title">APA Leader & Master</h4>
+                <span class="badge bg-secondary badge-pill">#APALeader</span>
+                <span class="badge bg-secondary badge-pill">#APADeveloper</span>
+                <span class="badge bg-secondary badge-pill mb-2">#AI</span
+                ><br />
+                <a href="https://certificates.automationanywhere.com/01b27269-8ed1-4479-8b55-78f4e0199413" class="read-more-btn link">Show Credential</a>
+              </div>
+            </div>
+          </div>
+          <div class="post col-md-4 game all col-10 mt-3 mt-md-0" data-aos="fade-up">
+            <div class="card">
+              <img src="images/DA.png" class="card-img-top" alt="..." />
+              <div class="card-body text-center">
+                <h4 class="card-title">Document Automation MasterClass</h4>
+                <span class="badge bg-secondary badge-pill">#A360</span>
+                <span class="badge bg-secondary badge-pill">#DocAutomation</span>
+                <span class="badge bg-secondary badge-pill mb-2">#WebExtract</span
+                ><br />
+                <a href="https://certificates.automationanywhere.com/88b83720-4d84-43f2-b1df-93b7a809ecf0" class="read-more-btn link">Show Credential</a>
+              </div>
+            </div>
+          </div>
+          <div class="post col-md-4 game all col-10 mt-3 mt-md-0" data-aos="fade-up">
+            <div class="card">
+              <img
+                src="images/Essential.png"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body text-center">
+                <h4 class="card-title">Essentials Automation Professional</h4>
+                <span class="badge bg-secondary badge-pill">#Automation</span>
+                <span class="badge bg-secondary badge-pill">#RPA</span>
+                <span class="badge bg-secondary badge-pill mb-2">#A360</span
+                ><br />
+                <a href="https://certificates.automationanywhere.com/88b83720-4d84-43f2-b1df-93b7a809ecf0" target="_blank" rel="noopener noreferrer" class="read-more-btn link">Show Credential</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- portfolio section ends here -->
+
+    <!-- testimonial section starts  -->
+    <section class="testimonial mt-5 pt-5" id="testimonial">
+      <div class="row justify-content-evenly">
+        <div class="col-md-4 col-10" data-aos="slide-right">
+          <img src="images/Awards.png" class="img-fluid" alt="" />
+        </div>
+        <div class="col-md-6 col-10 mt-5" data-aos="slide-left">
+          <div class="heading">
+            <small>Awards</small>
+            <h3>Recognition & Achievements</h3>
+            <!-- here we will use carousel element from bootstrap -->
+            <div
+              id="carouselExampleControls"
+              class="carousel slide"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="row justify-content-evenly">
+                    <div class="col-2 text-center">
+                      <i class="bi bi-quote"></i>
+                    </div>
+                    <div class="col-10">
+						<h4>Technical Excellence – Implementation</h4>
+						<!--<small class="fs-6 text-muted">CEO of Company</small>-->
+						<p class="text-muted">
+							Successfully led the IQVIA US RPA implementation during UAT and Hypercare, ensuring timely issue resolution and client satisfaction through strong communication and quick problem-solving.
+						</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="row justify-content-evenly">
+                    <div class="col-2 text-center">
+                      <i class="bi bi-quote"></i>
+                    </div>
+                    <div class="col-10">
+						<h4>Shining Star – USTAR Recognition</h4>
+						<!--<small class="fs-6 text-muted">CEO of Company</small>-->
+						<p class="text-muted">
+							Honored for excellent contribution to Business Process Automation, showcasing strong collaboration and impactful delivery appreciated by UST leadership.
+						</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="row justify-content-evenly">
+                    <div class="col-2 text-center">
+                      <i class="bi bi-quote"></i>
+                    </div>
+                    <div class="col-10">
+						<h4>Appreciation eCard – Key Player Recognition<h4>
+						<!--<small class="fs-6 text-muted">CEO of Company</small> -->
+						<p class="text-muted">
+							Acknowledged for exceptional effort and commitment during the IQVIA US implementation UAT and Hypercare phases, ensuring timely delivery and high-quality results.
+						</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button
+                class="nextprev-btn rounded-pill prev-btn"
+                type="button"
+                data-bs-target="#carouselExampleControls"
+                data-bs-slide="prev"
+              >
+                <i class="bi bi-arrow-left-circle-fill prev"></i>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="nextprev-btn rounded-pill next-btn"
+                type="button"
+                data-bs-target="#carouselExampleControls"
+                data-bs-slide="next"
+              >
+                <i class="bi bi-arrow-right-circle-fill next"></i>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- testimonial ends here -->
+
+    <!-- blog section starts -->
+    <section class="blog mt-5 pb-5" id="blog">
+      <div class="heading text-center pt-5">
+        <small>Experience</small>
+        <h3>Where I’ve Learned & Contributed</h3>
+      </div>
+      <div class="row justify-content-evenly px-4 mt-4" data-aos="fade-up">
+        <div class="blogpost col-md-4 col-10 mt-2 mt-md-0 game all">
+          <div class="card">
+            <img
+              src="images/ust_logo.png"
+              class="card-img-top rounded-4"
+              alt="..."
+            />
+            <div class="card-body px-4">
+              <small>UST</small
+              ><span class="ms-3">Jan 2022 - Present</span>
+              <h4 class="card-title">
+                <a href="">Lead I - Software Engineering</a>
+              </h4>
+              <p class="text-muted">
+                Automated processes across SAP, Salesforce, ServiceNow, and web apps using Automation Anywhere A360 with AI and API integrations.
+              </p>
+              <a href="#" class="read-more-btn link" data-bs-toggle="modal" data-bs-target="#exampleModal1">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="blogpost col-md-4 col-10 mt-5 mt-md-0 website all">
+          <div class="card">
+            <img
+              src="images/gnx.png"
+              class="card-img-top rounded-4"
+              alt="..."
+            />
+            <div class="card-body px-4">
+              <small>GNX Digital Solution</small
+              ><span class="ms-3">Jul 2021 - Dec 2021</span>
+              <h4 class="card-title">
+                <a href="">Developer III - Software Engineering</a>
+              </h4>
+              <p class="text-muted">
+                Designed and deployed end-to-end Salesforce automations, custom A360 frameworks, Action Packages, and HTML/CSS email communications.
+              </p>
+              <a href="#" class="read-more-btn link" data-bs-toggle="modal" data-bs-target="#exampleModal2">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="blogpost col-md-4 col-10 mt-5 mt-md-0 webapp all">
+          <div class="card">
+            <img
+              src="images/probotiq.png"
+              class="card-img-top rounded-4"
+              alt="..."
+            />
+            <div class="card-body px-4">
+              <small> Probotiq Solutions</small
+              ><span class="ms-3">May 2019 - Jun 2021</span>
+              <h4 class="card-title">
+                <a href="">RPA Developer</a>
+              </h4>
+              <p class="text-muted">
+                Using AA v11.5 across banking, HR, and finance, leveraging VBScript, Excel, SAP GUI, web apps, and email for process efficiency.
+              </p>
+              <a href="#" class="read-more-btn link" data-bs-toggle="modal" data-bs-target="#exampleModal3">Read More</a>
+            </div>
+          </div>
+        </div>
+        <!-- here we will make modals if Read more link is clicked the modal will popup -->
+        <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              
+                <button type="button" class="btn-c rounded-pill" data-bs-dismiss="modal"><i class="bi bi-x-circle-fill"></i></button>
+              
+              <div class="modal-body px-4">
+                <!--<div class="img">
+                  <img src="images/ust_logo.png" class="img-fluid" alt="">
+                </div>-->
+                <div class="content mt-3">
+                  <small>UST  </small
+                    ><span class="text-muted ms-2">Jan 2022 - Present</span>
+                  <h4 class="card-title mt-3">Lead I - Software Engineering</h4>
+                  <!-- <div class="social-links mt-4">
+                      <button href="" class="rounded-pill dribble">
+                        <i class="bi bi-dribbble"></i>
+                      </button>
+                      <button href="" class="rounded-pill whatsapp">
+                        <i class="bi bi-whatsapp"></i>
+                      </button>
+                      <button href="" class="rounded-pill behance">
+                        <i class="bi bi-behance"></i>
+                      </button>
+                  </div> -->
+					  <ul class="text-muted mt-3">
+    <li>Lead RPA Engineer delivering end-to-end automation using Automation Anywhere A360 across industries.</li>
+    <li>Served as Business Analyst and Developer, ensuring smooth design, deployment, and hypercare support.</li>
+    <li>Automated complex processes in Salesforce, SAP BAPI, ServiceNow (API), web apps, terminal emulators, and ticketing portals.</li>
+    <li>Involved in requirement gathering and providing infrastructure and license recommendations for A360.</li>
+    <li>Managed process migration from Automation Anywhere v11 to A360, ensuring standards and seamless transition.</li>
+    <li>Used Automation Anywhere REST API for credential management and administrative task automation.</li>
+  </ul>
+                </div>
+              </div>
+              <!--<div class="heading px-2">
+                <h3 class="fs-3 ms-3">Leave A Comment</h3>
+              </div>
+              <div class="contact-form ms-3 mt-3 pb-4 px-2">
+                <div class="mb-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="exampleFormControlInput1"
+                    placeholder="Name"
+                  />
+                </div>
+                <div class="mb-3">
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="exampleFormControlInput1"
+                    placeholder="E-mail"
+                  />
+                </div>
+                <div class="mb-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="exampleFormControlInput1"
+                    placeholder="Mobile No."
+                  />
+                </div>
+                <div class="mb-3">
+                  <textarea
+                    class="form-control"
+                    id="exampleFormControlTextarea1"
+                    placeholder="Message"
+                    rows="5"
+                  ></textarea>
+                </div>
+                <button class="c-btn h-btn mt-3 py-2 px-4 rounded-pill">
+                  Submit
+                </button>
+              </div>-->
+              
+            </div>
+          </div>
+        </div>
+        <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              
+                <button type="button" class="btn-c rounded-pill" data-bs-dismiss="modal"><i class="bi bi-x-circle-fill"></i></button>
+              
+              <div class="modal-body px-4">
+                <!--<div class="img">
+                  <img src="images/gnx.png" class="img-fluid" alt="">
+                </div>-->
+                <div class="content mt-3">
+                  <small>GNX Digital Solution  </small
+                    ><span class="text-muted ms-2 ms-md-0">Jul 2021 - Dec 2021</span>
+                  <h4 class="card-title mt-3">Developer III - Software Engineering</h4>
+                  <!--<div class="social-links mt-4">
+                      <button href="" class="rounded-pill dribble">
+                        <i class="bi bi-dribbble"></i>
+                      </button>
+                      <button href="" class="rounded-pill whatsapp">
+                        <i class="bi bi-whatsapp"></i>
+                      </button>
+                      <button href="" class="rounded-pill behance">
+                        <i class="bi bi-behance"></i>
+                      </button>
+                  </div>-->
+					  <ul class="text-muted mt-3">
+    <li>Senior RPA Developer for Salesforce automation projects, handling solution design, SDD creation, and environment setup.</li>
+    <li>Developed and deployed attended and unattended bots using custom frameworks for robust automation.</li>
+    <li>Designed and implemented flagship frameworks — ReportDownloadBotz and PerformerBotz — in Automation Anywhere A360.</li>
+    <li>Created multiple custom Action Packages to extend A360 capabilities and enable tailored automation solutions.</li>
+    <li>Developed structured HTML/CSS email communications for clear and professional customer updates.</li>
+  </ul>
+                </div>
+              </div>
+              <!--<div class="heading px-2">
+                <h3 class="fs-3 ms-3">Leave A Comment</h3>
+              </div>
+              <div class="contact-form ms-3 mt-3 pb-4 px-2">
+                <div class="mb-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="exampleFormControlInput1"
+                    placeholder="Name"
+                  />
+                </div>
+                <div class="mb-3">
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="exampleFormControlInput1"
+                    placeholder="E-mail"
+                  />
+                </div>
+                <div class="mb-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="exampleFormControlInput1"
+                    placeholder="Mobile No."
+                  />
+                </div>
+                <div class="mb-3">
+                  <textarea
+                    class="form-control"
+                    id="exampleFormControlTextarea1"
+                    placeholder="Message"
+                    rows="5"
+                  ></textarea>
+                </div>
+                <button class="c-btn h-btn mt-3 py-2 px-4 rounded-pill">
+                  Submit
+                </button>
+              </div>-->
+              
+            </div>
+          </div>
+        </div>
+        <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              
+                <button type="button" class="btn-c rounded-pill" data-bs-dismiss="modal"><i class="bi bi-x-circle-fill"></i></button>
+              
+              <div class="modal-body px-4">
+                <!--<div class="img">
+                  <img src="images/probotiq.png" class="img-fluid" alt="">
+                </div>-->
+                <div class="content mt-3">
+                  <small>Probotiq Solutions  </small
+                    ><span class="text-muted ms-2 ms-md-0">May 2019 - Jun 2021</span>
+                  <h4 class="card-title mt-3">RPA Developer</h4>
+                  <!--<div class="social-links mt-4">
+                      <button href="" class="rounded-pill dribble">
+                        <i class="bi bi-dribbble"></i>
+                      </button>
+                      <button href="" class="rounded-pill whatsapp">
+                        <i class="bi bi-whatsapp"></i>
+                      </button>
+                      <button href="" class="rounded-pill behance">
+                        <i class="bi bi-behance"></i>
+                      </button>
+                  </div>-->
+					    <li>Developed and supported 4 end-to-end automation processes using Automation Anywhere v11.5 across banking, HR, and finance.</li>
+    <li>Gained expertise in VBScript and Excel automation for text manipulation, data processing, and report generation.</li>
+    <li>Automated SAP GUI, web applications, and email workflows, improving process speed and accuracy.</li>
+    <li>Contributed to requirement gathering, solution design, development, testing, deployment, and hypercare.</li>
+    <li>Maintained attended and unattended robots, managing logs, remote execution, monitoring, scheduling, and work queues.</li>
+  </ul>
+                </div>
+              </div>
+              <!--<div class="heading px-2">
+                <h3 class="fs-3 ms-3">Leave A Comment</h3>
+              </div>
+              <div class="contact-form ms-3 mt-3 pb-4 px-2">
+                <div class="mb-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="exampleFormControlInput1"
+                    placeholder="Name"
+                  />
+                </div>
+                <div class="mb-3">
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="exampleFormControlInput1"
+                    placeholder="E-mail"
+                  />
+                </div>
+                <div class="mb-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="exampleFormControlInput1"
+                    placeholder="Mobile No."
+                  />
+                </div>
+                <div class="mb-3">
+                  <textarea
+                    class="form-control"
+                    id="exampleFormControlTextarea1"
+                    placeholder="Message"
+                    rows="5"
+                  ></textarea>
+                </div>
+                <button class="c-btn h-btn mt-3 py-2 px-4 rounded-pill">
+                  Submit
+                </button>
+              </div>-->
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- blog section ends here -->
+
+    <!-- contact section starts -->
+<section class="contact py-5" id="contact">
+  <div class="heading text-center">
+    <small>Get in Touch</small>
+    <h3>Any Questions? Feel Free to Contact</h3>
+  </div>
+  <div class="row justify-content-evenly mt-5">
+    <div class="col-md-5 col-10 contact-details" data-aos="slide-right">
+      <div class="row justify-content-evenly">
+        <div class="col-1">
+          <i class="bi bi-geo-alt-fill"></i>
+        </div>
+        <div class="col-11">
+          <p>101 Masuthu Street, Tamil Nadu, India - 606 709</p>
+        </div>
+      </div>
+      <div class="row justify-content-evenly">
+        <div class="col-1">
+          <i class="bi bi-telephone-fill"></i>
+        </div>
+        <div class="col-11">
+          <p>+91 9092984360</p>
+        </div>
+      </div>
+      <div class="row justify-content-evenly">
+        <div class="col-1">
+          <i class="bi bi-send-fill"></i>
+        </div>
+        <div class="col-11">
+          <p>kishoreramesh2797@gmail.com</p>
+        </div>
+      </div>
+      <div class="row justify-content-evenly">
+  <div class="col-1">
+    <a href="https://www.linkedin.com/in/kishore-kumar-r-55aa01146/" target="_blank" style="color: inherit;">
+      <i class="bi bi-linkedin"></i>
+    </a>
+  </div>
+  <div class="col-11">
+    <p>
+      <a href="https://www.linkedin.com/in/kishore-kumar-r-55aa01146/" 
+         target="_blank" 
+         style="text-decoration: none; color: inherit;">
+         linkedin.com/in/kishore-kumar-r-55aa01146
+      </a>
+    </p>
+  </div>
+</div>
+
+    </div>
+
+    <!-- Contact Form -->
+    <div class="col-md-5 col-10 mt-3 mt-md-0" data-aos="slide-left">
+      <form id="contact-form" class="contact-form">
+        <div class="mb-3">
+          <input type="text" name="name" class="form-control" placeholder="Name" required />
+        </div>
+        <div class="mb-3">
+          <input type="email" name="email" class="form-control" placeholder="E-mail" required />
+        </div>
+        <div class="mb-3">
+          <input type="text" name="mobile" class="form-control" placeholder="Mobile No." />
+        </div>
+        <div class="mb-3">
+          <textarea name="message" class="form-control" placeholder="Message" rows="5" required></textarea>
+        </div>
+        <button type="submit" class="c-btn h-btn mt-3 py-3 px-5 rounded-pill">
+          Submit
+        </button>
+        <p id="form-status" style="margin-top:10px;"></p>
+      </form>
+    </div>
+  </div>
+</section>
+<!-- contact section ends here -->
+
+      <!-- now we will make back to top button when user click on it it will be redirected to top page  -->
+    <button
+      type="button"
+      class="btn btn-floating btn-lg rounded-pill"
+      id="btn-back-to-top"
+    >
+      <i class="bi bi-arrow-up"></i>
+    </button>
+
+    <!-- footer section starts  -->
+    <footer class="text-center text-muted py-4">
+      <h3 class="text-white pt-4" data-aos="fade-up">Portfolio</h3>
+      <div class="link-group mt-5" data-aos="fade-up">
+        <a href="#home">Home</a>
+        <div class="vr"></div>
+        <a href="#service">Service</a>
+        <div class="vr"></div>
+        <a href="#about">My Skills</a>
+        <div class="vr"></div>
+        <a href="#portfolio">Certifications</a>
+        <div class="vr"></div>
+        <a href="#testimonial">Awards</a>
+        <div class="vr"></div>
+        <a href="#blog">Experience</a>
+      </div>
+      <div class="social-links mt-5" data-aos="fade-up">
+        <button href="https://www.linkedin.com/in/kishore-kumar-r-55aa01146/" class="rounded-pill dribble">
+          <i class="bi bi-linkedin"></i>
+        </button>
+        <button href="https://wa.me/919092984360" target="_blank" class="rounded-pill whatsapp">
+          <i class="bi bi-whatsapp"></i>
+        </button>
+        <button href="mailto:kishoreramesh2797@gmail" target="_blank" class="rounded-pill behance">
+          <i class="bi bi-envelope-at-fill"></i>
+        </button>
+      </div>
+      <hr class="text-muted my-4" />
+
+      <p>Copyright 2025 Portfolio | All Rights Reserved.</p>
+    </footer>
+    <!-- footer section ends here -->
+
+      <!-- bootstrap javascript cdn link  -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- AOS library javascript link  -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      // initializing AOS library
+      AOS.init({
+        duration: 1000,
+        offset: 50,
+      });
+    </script>
+    <!-- custom js file linking -->
+    <script src="js/script.js"></script>
+    
+  </body>
+</html>
